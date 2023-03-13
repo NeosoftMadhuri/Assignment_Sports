@@ -1,7 +1,7 @@
 import React ,{useState,useEffect} from 'react'
 import axios from 'axios';
 import PlayerCard from '../Container/PlayerCard'
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import HeaderPage from '../Container/HeaderPage'
 
 export default function Home() {
@@ -41,8 +41,10 @@ console.log(playerData)
 console.log(playerData)
   return (
     <>
+    
      <HeaderPage/>
-    <div style={{marginLeft:"500px"}}>
+     <Container style={{backgroundColor:"#C8B6A6"}} fluid>
+     <div style={{marginLeft:"500px"}}>
         <input
           type="text"
           placeholder="Search by First or last name of player"
@@ -56,6 +58,8 @@ console.log(playerData)
           </Row>
       
       </div>
+     </Container>
+  
    
   
 

@@ -14,9 +14,9 @@ export default function PlayerCard({ playerData }) {
 
             {playerData?.map((data) => (
                 <Col sx={3} md={3} lg={3}>
-                    <Card style={{ width: '16rem' ,marginBottom:"30px", border:"1px solid ", boxShadow:"5px 5px black"}} onClick={()=>handleData(data)}>
-                        <Card.Img variant="top" src={`images/${data.Id}.jpg`} height={200} />
-                        <Card.Body style={{backgroundColor:"lightgray"}}>
+                    <Card style={{ width: '17rem' ,marginBottom:"30px",padding:"20px",border:"2px solid ", boxShadow:"5px 5px black"}} onClick={()=>handleData(data)}>
+                        <Card.Img variant="top" src={`images/${data.Id}.jpg`} height={170}  />
+                        <Card.Body style={{backgroundColor:"#ECF2FF"}}>
                             <Card.Title>{data.PFName}</Card.Title>
                             <Card.Text>
                            <h6>Skill History:{data.SkillDesc}</h6>
